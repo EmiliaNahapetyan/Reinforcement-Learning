@@ -1,0 +1,61 @@
+Ten-Armed Testbed
+This repository contains an implementation of the classic 10-armed testbed problem from Reinforcement Learning. The code reproduces experiments from Chapter 2 of Sutton and Barto's "Reinforcement Learning: An Introduction" book.
+Overview
+The 10-armed testbed is a fundamental experiment in reinforcement learning that compares different action selection methods in a multi-armed bandit problem. This implementation allows you to:
+
+Visualize reward distributions for bandit arms
+Compare different exploration/exploitation strategies:
+
+Greedy vs ε-greedy action selection
+Optimistic initial values vs realistic initial values
+Upper-Confidence-Bound (UCB) action selection (to be implemented)
+Gradient Bandit Algorithms (to be implemented)
+
+
+
+Structure
+
+ten_armed_testbed2.ipynb: Jupyter notebook with experiments and visualizations
+src/bandit.py: Implementation of the Bandit class with various action selection strategies
+
+Experiments
+The notebook reproduces three key experiments from the textbook:
+
+Reward Distribution Visualization - Shows the distribution of rewards across the 10 arms
+Greedy vs ε-greedy Action Selection - Compares performance of different exploration rates (ε = 0, 0.01, 0.1)
+Optimistic Initial Values vs Realistic Initial Values - Shows how optimistic initialization can encourage exploration
+
+Additional experiments to be implemented:
+
+Upper-Confidence-Bound (UCB) Action Selection
+Gradient Bandit Algorithms (GBA)
+
+Usage
+To run the experiments:
+
+Ensure you have the required dependencies installed:
+bashCopypip install numpy matplotlib tqdm
+
+Open the Jupyter notebook:
+bashCopyjupyter notebook ten_armed_testbed2.ipynb
+
+Run the cells to reproduce the experiments and visualizations
+
+Results
+The implementation reproduces the following figures from the textbook:
+
+Figure 2.1: Example reward distributions for a 10-armed testbed
+Figure 2.2: Average performance of ε-greedy action-value methods on the 10-armed testbed
+Figure 2.3: Optimistic initial action-value estimates
+
+Requirements
+
+Python 3.x
+NumPy
+Matplotlib
+tqdm
+
+References
+This implementation is based on the concepts from:
+
+Sutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press.
